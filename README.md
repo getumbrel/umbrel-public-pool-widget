@@ -1,6 +1,6 @@
 # Public Pool widget API server for umbrelOS
 
-<img width="410" alt="Screenshot of public pool widget" src="https://github.com/user-attachments/assets/379cf1c9-20f0-4e35-90ba-6cba3d47837f">
+<img width="410" alt="Screenshot of public pool widget" src="https://github.com/user-attachments/assets/422c0588-b442-46d5-bf33-87e68375dc9b">
 
 
 This is a server application that fetches data from a specified Public Pool instance's API and serves it in a formatted JSON response that's expected by umbrelOS 1.0+ to display a widget. 
@@ -21,7 +21,7 @@ The Dockerfile uses build arguments to target specific architectures (x86 and ar
 
 ## Running locally
 
-To run the server, you can build and run a Docker container using the Dockerfile. The server will start on port 3000 and will serve data at the `/widgets/fees` endpoint.
+To run the server, you can build and run a Docker container using the Dockerfile. The server will start on port 3000 and will serve data at the `/widgets/pool` endpoint.
 
 > Note: You will need to set the `PUBLIC_POOL_API_URL` environment variable to the URL of your upstream API before starting the server. If you don't have a local Public Pool instance, you can set it to `https://public-pool.io:40557/api/pool`.
 
